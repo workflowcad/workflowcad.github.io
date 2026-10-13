@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workflow-CAD: Simulating Engineer Workflows for Agentic CAD Modeling</title>
+  <meta name="description" content="Workflow-CAD: a closed-loop agent whose action space consists of engineer-level workflows extracted from professional CAD modeling videos and feature trees.">
+  <meta property="og:title" content="Simulating Engineer Workflows for Agentic CAD Modeling">
+  <meta property="og:description" content="Workflow-CAD and Workflow-CAD-Bench for Agentic CAD Modeling.">
+  <meta property="og:image" content="https://workflowcad.github.io/static/images/icon.png">
+  <link rel="icon" type="image/png" href="static/images/favicon.png">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <img class="logo" src="static/images/icon.png" alt="Workflow-CAD logo">
+      <h1 class="title">Simulating Engineer Workflows<br>for Agentic CAD Modeling</h1>
+      <p class="subtitle">Workflow-CAD &amp; Workflow-CAD-Bench</p>
+      <nav class="links">
+        <a class="btn" href="#demos">Demos</a>
+        <a class="btn" href="#abstract">Abstract</a>
+        <a class="btn" href="https://github.com/workflowcad">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="demos" class="section">
+      <div class="container">
+        <h2>Demos</h2>
+
+        <figure class="video-card">
+          <video controls playsinline preload="metadata" poster="static/images/demo1_poster.jpg">
+            <source src="static/videos/demo1.mp4" type="video/mp4">
+          </video>
+          <figcaption>Workflow-CAD operating SolidWorks across multiple modeling tasks in parallel.</figcaption>
+        </figure>
+
+        <figure class="video-card">
+          <video controls playsinline preload="metadata" poster="static/images/demo2_poster.jpg">
+            <source src="static/videos/demo2.mp4" type="video/mp4">
+          </video>
+          <figcaption>End-to-end examples: text-to-part generation, part reconstruction from three-view drawings, and kinematically-valid assemblies (gear train, four-bar linkage) verified by motion checks.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="abstract" class="section alt">
+      <div class="container narrow">
+        <h2>Abstract</h2>
+        <p>
+          Large language models (LLMs) can now operate professional CAD software, yet most Agentic CAD
+          systems either generate intermediate modeling code like CadQuery or emit low-level API calls one
+          by one. The former struggles to generate complex CAD models in a single pass, whereas the latter
+          creates long-horizon tasks in which errors readily accumulate. To overcome these limitations, we
+          present <strong>Workflow-CAD</strong>, a closed-loop agent whose action space consists of
+          engineer-level workflows extracted from professional CAD modeling videos and feature trees. We
+          compare the Atomic API and Workflow interfaces under a controlled protocol and find that the
+          latter significantly outperforms the former. We also introduce <strong>Workflow-CAD-Bench</strong>,
+          a holistic Agentic CAD Modeling benchmark spanning text-to-part generation, CAD reconstruction from
+          three-view drawings, and generation of complex, physically-plausible and kinematically-valid
+          assemblies. Beyond comparing Agentic CAD Modeling systems, Workflow-CAD-Bench also evaluates the
+          underlying LLMs' ability to use tools and perform autonomous modeling.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Workflow-CAD</p>
+    </div>
+  </footer>
+
+</body>
+</html>

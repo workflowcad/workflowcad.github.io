@@ -1,0 +1,87 @@
+:root {
+  --blue: #1565c0;
+  --blue-dark: #0d3b78;
+  --blue-light: #e8f2fc;
+  --text: #1f2933;
+  --muted: #5f6b7a;
+  --max: 1080px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  background: #fff;
+  line-height: 1.6;
+}
+
+.container { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+.container.narrow { max-width: 860px; }
+
+.hero {
+  text-align: center;
+  padding: 56px 0 40px;
+  background:
+    linear-gradient(rgba(21, 101, 192, 0.06) 1px, transparent 1px) 0 0 / 32px 32px,
+    linear-gradient(90deg, rgba(21, 101, 192, 0.06) 1px, transparent 1px) 0 0 / 32px 32px,
+    linear-gradient(180deg, #f7fbff 0%, #fff 100%);
+  border-bottom: 1px solid #e3ecf5;
+}
+
+.logo { width: 200px; height: auto; display: block; margin: 0 auto 12px; mix-blend-mode: multiply; }
+
+.title {
+  font-size: clamp(1.8rem, 4.2vw, 2.9rem);
+  line-height: 1.2;
+  margin: 0 0 12px;
+  color: var(--blue-dark);
+  letter-spacing: -0.01em;
+}
+
+.subtitle { font-size: 1.15rem; color: var(--muted); margin: 0 0 24px; }
+
+.links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+.btn {
+  display: inline-block;
+  padding: 9px 22px;
+  border-radius: 999px;
+  background: var(--blue-dark);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.15s ease;
+}
+.btn:hover { background: var(--blue); }
+
+.section { padding: 56px 0; }
+.section.alt { background: var(--blue-light); }
+
+h2 {
+  text-align: center;
+  font-size: 1.9rem;
+  margin: 0 0 32px;
+  color: var(--blue-dark);
+}
+
+.video-card { margin: 0 0 40px; }
+.video-card:last-child { margin-bottom: 0; }
+
+.video-card video {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  background: #000;
+  box-shadow: 0 6px 24px rgba(13, 59, 120, 0.15);
+}
+
+.video-card figcaption { text-align: center; color: var(--muted); margin-top: 12px; }
+
+#abstract p { text-align: left; font-size: 1.08rem; margin: 0; }
+
+.footer { text-align: center; color: var(--muted); font-size: 0.9rem; padding: 24px 0; border-top: 1px solid #e3ecf5; }
